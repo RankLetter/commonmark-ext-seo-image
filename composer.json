@@ -1,0 +1,40 @@
+{
+  "name": "rankletter/commonmark-ext-seo-image",
+  "license": "MIT",
+  "type": "commonmark-extension",
+  "homepage": "https://github.com/RankLetter/commonmark-ext-seo-image",
+  "description": "Adds support for explicit width and height as well as lazy loading to the league/commonmark markdown parser package",
+  "keywords": [
+    "markdown",
+    "commonmark",
+    "extension",
+    "lazy",
+    "image",
+    "explicit width and height"
+  ],
+  "authors": [
+    {
+      "name": "Peter Thaleikis",
+      "homepage": "https://releasecandidate.dev"
+    },
+    {
+      "name": "Simon vom Eyser",
+      "email": "simon.vom.eyser@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "league/commonmark": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RankLetter\\CommonMarkImageExtension\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
