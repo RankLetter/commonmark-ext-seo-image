@@ -41,4 +41,4 @@ This creates the following HTML
 
 ## Further Options
 
-Further options to replicate the lazy loading using JavaScript packages are supported. For more details please check the [original package](https://github.com/simonvomeyser/commonmark-ext-lazy-image). This functionality will remain for now.
+Further options to replicate the lazy loading using JavaScript packages are supported. For more details please check the [original package](https://github.com/simonvomeyser/commonmark-ext-lazy-image#options). This functionality will remain for now.
