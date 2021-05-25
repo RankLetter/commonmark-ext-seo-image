@@ -24,10 +24,10 @@ Assuming `/path/to/image.jpg` points to an image with a size of 1024x512 pixels,
 
 ``` php
 use League\CommonMark\Environment;
-use RankLetter\CommonMarkExtension\ImageExtension;
+use RankLetter\CommonMarkImageExtension\SEOImageExtension;
 
 $this->environment = Environment::createCommonMarkEnvironment();
-$this->environment->addExtension(new ImageExtension());
+$this->environment->addExtension(new SEOImageExtension);
 
 $converter = new CommonMarkConverter([], $this->environment);
 $html = $converter->convertToHtml('![alt text](/path/to/image.jpg)');
