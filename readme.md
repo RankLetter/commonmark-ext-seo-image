@@ -24,10 +24,10 @@ Assuming `/path/to/image.jpg` points to an image with a size of 1024x512 pixels,
 
 ``` php
 use League\CommonMark\Environment;
-use RankLetter\CommonMarkExtension\ImageExtension;
+use RankLetter\CommonMarkImageExtension\SEOImageExtension;
 
 $this->environment = Environment::createCommonMarkEnvironment();
-$this->environment->addExtension(new ImageExtension());
+$this->environment->addExtension(new SEOImageExtension);
 
 $converter = new CommonMarkConverter([], $this->environment);
 $html = $converter->convertToHtml('![alt text](/path/to/image.jpg)');
@@ -41,4 +41,4 @@ This creates the following HTML
 
 ## Further Options
 
-Further options to replicate the lazy loading using JavaScript packages are supported. For more details please check the [original package](https://github.com/simonvomeyser/commonmark-ext-lazy-image). This functionality will remain for now.
+Further options to replicate the lazy loading using JavaScript packages are supported. For more details please check the [original package](https://github.com/simonvomeyser/commonmark-ext-lazy-image#options). This functionality will remain for now.
